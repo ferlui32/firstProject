@@ -3,6 +3,18 @@
   --textColorSchPg: rgb(38, 35, 30);
   --titleBackgroundColor: rgb(93, 91, 91);
   --fontFamily: Arial, Helvetica, sans-serif;
+  --FontTitle: 'Montserrat', sans-serif;
+  --FontHeader: 'Bebas Neue', cursive;
+}
+
+header{
+  font-family: var(--FontTitle);
+  text-align: center;
+  font-size: 31px;
+  font-weight: 900;
+  word-spacing: 4px;
+  line-height: 0.75;
+  margin: 10px 0px 10px 0px
 }
 
 .navBar{
@@ -27,6 +39,7 @@
 
 .menu{
   margin: 0px;
+  padding: 0 0 0 0;
 }
 
 .menu img {
@@ -64,10 +77,14 @@
   
 /* search button */
 
+.searchSignin{
+  height: 0px;
+}
+
 .searchSignin form {
   position: relative;
-  display: inline-block;
-  margin-top: 63px;
+  /* display: inline-block; */
+  margin-top: 60px;
   height: fit-content;
 }
 
@@ -88,20 +105,33 @@ button[type="submit"] {
 }
 
 .fa-search {
-  font-size: 25px;
+  font-size: xx-large;
   color: rgb(29, 28, 28);
 }
 
 .searchSignin{
   display: flex;
   justify-content: space-around;
-  margin-left: 100px;
+  margin-left: 750px;
 }
 
-.searchSignin p, .fa-regular {
-  margin-top: 60px;
-  padding-left: 40px;
+.searchSignin2{
+  margin-left: 480px;
 }
+
+.searchSignin p {
+  margin-top: 70px;
+  padding-left: 40px;
+  
+}
+
+
+.fa-regular{
+  margin-top: 60px;
+  font-size: xx-large;
+  padding-left: 20px;
+}
+
   select {
     font-size: 16px;
     padding: 8px;
@@ -133,9 +163,24 @@ button[type="submit"] {
   align-items: flex-end;
   text-shadow: 2px 0px 4px rgb(20, 20, 20);
 }
-.siteIntro p{
-  width: 65ch;
-  
+
+
+.siteIntro>p{
+  width: 47ch;
+  font-size: 20px; 
+}
+
+
+.siteIntro>.title{
+  font-family: var(--FontTitle);
+  width: 631px;
+  font-size: 61px;
+  font-weight: 900;
+  text-align: left;
+  margin-block-start: 50px;
+  word-spacing: -6px;
+  line-height: 0.75;
+
 }
 
 .btnExplore{
@@ -165,8 +210,8 @@ button[type="submit"] {
 }
 
 .wineList, .WineryDescription {
-  width: 352px;
-  height: 580px;
+  width: 500px;
+  height: 550px;
   padding-top: 30px;
   overflow-y: scroll;
   font-family: var(--fontFamily);
