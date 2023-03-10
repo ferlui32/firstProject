@@ -173,6 +173,11 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+.btnExplore>a{
+  color: white;
+  text-decoration: none;
+}
+
 .fa-search {
   font-size: xx-large;
   color: rgb(29, 28, 28);
@@ -185,13 +190,23 @@ button[type="submit"] {
 }
 
 .searchSignin2{
-  margin-left: 480px;
+  margin-left: 450px;
+}
+
+.searchSignin2>p{
+  width: 100px;
 }
 
 .searchSignin p {
   margin-top: 70px;
   padding-left: 40px;
   
+}
+.searchSignin a{
+  margin-top: 70px;
+  padding-left: 40px;
+  color: black;
+  text-decoration: none;
 }
 
 
